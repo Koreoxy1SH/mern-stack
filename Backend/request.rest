@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/65489d1b0933c7394587651e
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "x",
+    "email": "x@gmail.com",
+    "gender" : "male"
+}
+
+
+###
+PATCH http://localhost:5000/users/65489d1b0933c7394587651e
+Content-Type: application/json
+
+{
+    "name" : "Rudi",
+    "email": "rudi@gmail.com",
+    "gender" : "male"
+}
+
+
+###
+DELETE http://localhost:5000/users/65489d1b0933c7394587651e
